@@ -8,15 +8,9 @@
   src: url("fonts/Lusitana-Bold.ttf") /* TTF file for CSS3 browsers */
 }
 
-// reset
-
-.reset-link {
-  color: inherit;
-  text-decoration: none;
-}
-
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 html {
@@ -111,7 +105,13 @@ img {
   position: relative;
 }
 
+.copy {
+  font-size: 1.5em;
+}
+
 .footer {
+  font-size: 1em;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
@@ -147,7 +147,7 @@ img {
   border-right: 1px black solid;
 }
 
-.copy-well {
+.border-bottom {
   border-bottom: 1px solid black;
 }
 
@@ -158,19 +158,20 @@ img {
   text-align: center;
 }
 
-.copy-well > p {
+p {
+//  font-size: 1.5em;
+  text-align: center;
+  max-width: 500px;
+  margin: 1.5em auto;
+}
+
+.pull-quote {
   font-size: 1.5em;
   text-align: center;
   max-width: 500px;
   margin: 2em auto;
 }
 
-.pull-quote {
-  font-size: 2em;
-  text-align: center;
-  max-width: 500px;
-  margin: 2em auto;
-}
 .pull-quote--border {
   height: 10px;
   background: black;
@@ -179,6 +180,8 @@ img {
 }
 
 .order-button {
+  font-family: LusitanaRegular;
+  display: inline-block;
   background: inherit;
   border: 1px solid black;
   border-radius: 0;
@@ -189,6 +192,7 @@ img {
 }
 
 .product-details {
+  text-align: center;
   position: fixed;
   top: 0;
   height: 100vh;
@@ -217,6 +221,15 @@ img {
 
 .nav-mobile {
   z-index: 1;
+  text-align: center;
+}
+.close-button {
+  color: white;
+  border: 1px solid white;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  background: none;
 }
 
 @media (max-width: 700px) {
@@ -231,5 +244,21 @@ img {
 	top: -1px;
 	background: white;
 	border-bottom: 1px black solid;
+	padding: 1em;
+	text-align: center;
   }
+
+  .footer {
+	display: block;
+	padding-top: 0;
+  }
+
+  .footer--slice:not(:nth-child(3)) {
+	border-right: none;
+  }
+
+  .footer--slice:not(:first-child) {
+	border-top: 1px solid black;
+  }
+
 }

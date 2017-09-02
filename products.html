@@ -11,18 +11,20 @@
 	<body>
 		<main>
 			<header>
-				<a href="/" class="reset-link">
+				<a href="./" class="reset-link">
 					<h1 class="header--text">Fish & Lobster Co.</h1>
 					<img class="header--logo" src="./images/logo.png"/>
 					<h2 class="header--text">Retail & Wholesale</h2>
 				</a>
 			</header>
 
-			<button class="hamburger js-nav-toggle">NAV</button>
+			<div class="hamburger">
+				<button class="js-nav-toggle">NAV</button>
+			</div>
 
 			<nav class="nav-mobile product-details hidden js-nav-overlay">
-				<button class="js-nav-toggle">Close</button>
-				<ul class="menu">
+				<button class="js-nav-toggle close-button">X</button>
+				<ul>
 					<a class="menu-link" href="./about"><li>THE SELSEA STORY</li></a>
 					<a class="menu-link" href="./sustainability"><li>SUSTAINABILITY</li></a>
 					<a class="menu-link" href="./products"><li>PRODUCTS</li></a>
@@ -73,7 +75,7 @@
 					</ul>
 
 					<button class="order-button js-product-details-toggle">PRODUCT DETAILS</button>
-					<button class="order-button">ORDER SHELLFISH</button>
+					<a href="./orders" class="order-button">ORDER SHELLFISH</a>
 
 				</div>
 			</div>
@@ -125,7 +127,7 @@
 						<li>Large Eye Dentex (Cachucho)</li>
 					</ul>
 
-					<button class="order-button">ORDER WILD FISH</button>
+					<a href="./orders" class="order-button">ORDER WILD FISH</a>
 				</div>
 			</div>
 
@@ -144,7 +146,7 @@
 						<li>Turbot</li>
 					</ul>
 
-					<button class="order-button">ORDER FARMED FISH</button>
+					<a href="./orders" class="order-button">ORDER FARMED FISH</a>
 
 				</div>
 			</div>
@@ -171,8 +173,9 @@
 				</div>
 			</footer>
 		</main>
+
 		<div class="js-product-details-overlay product-details hidden">
-			<button class="js-product-details-toggle">CLOSE</button>
+			<button class="js-product-details-toggle close-button">X</button>
 			<h3>Product Details</h3>
 			<h3>WILD CAUGHT SHELLFISH</h3>
 		</div>
