@@ -4,28 +4,43 @@
 		<title>Selsea</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="./main.css">
+		<script defer async src="./main.js"></script>
 	</head>
+
 	<body>
 		<main>
 			<header>
 				<a href="/" class="reset-link">
 					<h1 class="header--text">Fish & Lobster Co.</h1>
-					<img class="header--logo" src="images/logo.png"/>
+					<img class="header--logo" src="./images/logo.png"/>
 					<h2 class="header--text">Retail & Wholesale</h2>
 				</a>
 			</header>
-			<nav>
+
+			<button class="hamburger js-nav-toggle">NAV</button>
+
+			<nav class="nav-mobile product-details hidden js-nav-overlay">
+				<button class="js-nav-toggle">Close</button>
 				<ul class="menu">
-					<a class="menu-link" href="/about"><li>THE SELSEA STORY</li></a>
-					<a class="menu-link" href="/sustainability"><li>SUSTAINABILITY</li></a>
-					<a class="menu-link" href="/products"><li>PRODUCTS</li></a>
-					<a class="menu-link" href="/orders"><li>ORDERS</li></a>
+					<a class="menu-link" href="./about"><li>THE SELSEA STORY</li></a>
+					<a class="menu-link" href="./sustainability"><li>SUSTAINABILITY</li></a>
+					<a class="menu-link" href="./products"><li>PRODUCTS</li></a>
+					<a class="menu-link" href="./orders"><li>ORDERS</li></a>
+				</ul>
+			</nav>
+
+			<nav class="nav-desktop">
+				<ul class="menu">
+					<a class="menu-link" href="./about"><li>THE SELSEA STORY</li></a>
+					<a class="menu-link" href="./sustainability"><li>SUSTAINABILITY</li></a>
+					<a class="menu-link" href="./products"><li>PRODUCTS</li></a>
+					<a class="menu-link" href="./orders"><li>ORDERS</li></a>
 				</ul>
 			</nav>
 
 			<div class="hero banner">
-				<img src="/images/IMG_Products-1_crop.jpg" class="banner--image"/>
+				<img src="./images/IMG_Products-1_crop.jpg" class="banner--image"/>
 			</div>
 
 			<div class="content banner">
@@ -57,13 +72,14 @@
 						<li>Prawns</li>
 					</ul>
 
+					<button class="order-button js-product-details-toggle">PRODUCT DETAILS</button>
 					<button class="order-button">ORDER SHELLFISH</button>
 
 				</div>
 			</div>
 
 			<div class="hero banner">
-				<img src="/images/IMG_Products-2_crop.jpg" class="banner--image"/>
+				<img src="./images/IMG_Products-2_crop.jpg" class="banner--image"/>
 			</div>
 
 			<div class="content banner">
@@ -114,7 +130,7 @@
 			</div>
 
 			<div class="hero banner">
-				<img src="/images/IMG_Products-3_crop.jpg" class="banner--image"/>
+				<img src="./images/IMG_Products-3_crop.jpg" class="banner--image"/>
 			</div>
 
 			<div class="content banner">
@@ -155,5 +171,11 @@
 				</div>
 			</footer>
 		</main>
+		<div class="js-product-details-overlay product-details hidden">
+			<button class="js-product-details-toggle">CLOSE</button>
+			<h3>Product Details</h3>
+			<h3>WILD CAUGHT SHELLFISH</h3>
+		</div>
+
 	</body>
 </html>
