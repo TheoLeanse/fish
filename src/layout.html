@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Selsea</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./main.css">
+		<script defer async src="./main.js"></script>
+	</head>
+
+	<body>
+		<main>
+			<header>
+				<a href="./" class="header">
+					<h1 class="header--text">Fish & Lobster Co.</h1>
+					<img class="header--logo" src="./images/logo.png"/>
+					<h2 class="header--text">Retail & Wholesale</h2>
+				</a>
+			</header>
+
+			<div class="hamburger">
+				<a href="#" class="js-nav-toggle">NAV</a>
+			</div>
+
+			<nav class="nav-mobile overlay hidden js-nav-overlay">
+				<div class="nav-mobile--inner">
+				<button class="js-nav-toggle close-button">X</button>
+				<ul>
+					<a href="./about"><li class="nav-mobile-menu-item">THE SELSEA STORY</li></a>
+					<a href="./sustainability"><li class="nav-mobile-menu-item">SUSTAINABILITY</li></a>
+					<a href="./products"><li class="nav-mobile-menu-item">PRODUCTS</li></a>
+					<a href="./orders"><li class="nav-mobile-menu-item">ORDERS</li></a>
+				</ul>
+				</div>
+			</nav>
+
+			<nav class="nav-desktop">
+				<ul class="menu">
+					<a href="./about"><li>THE SELSEA STORY</li></a>
+					<a href="./sustainability"><li>SUSTAINABILITY</li></a>
+					<a href="./products"><li>PRODUCTS</li></a>
+					<a href="./orders"><li>ORDERS</li></a>
+				</ul>
+			</nav>
+
+			{{> @partial-block }}
+
+			<footer class="content">
+				<div class="footer">
+					<div class="footer--slice">
+						<p>To speak to one of our experienced team, please call us:</p>
+						<p><a href="tel:+442075155252">+44 (0)207 515 5252</a></p>
+					</div>
+					<div class="footer--slice">
+						<p>Whether you are a wholesaler, restaurant, caterer or individual, we will be happy to help you with your requirements.</p>
+					</div>
+					<div class="footer--slice">
+						<p>Visit us at our Billingsgate market stalls Tuesday–Sauturday, 5–9am (retail customers).</p>
+					</div>
+				</div>
+				<div class="footer--logo--container">
+					<div class="footer--logo">
+						<p>SELSEA</p>
+						<p>FISH & LOBSTER CO. LTD.</p>
+						<p>2017</p>
+					</div>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
