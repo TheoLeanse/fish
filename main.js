@@ -4,7 +4,7 @@
 	const navOverlay = document.querySelector('.js-nav-overlay');
 
 	[...navToggles].forEach(button => button.addEventListener('click', () => {
-		console.log('CLICK');
+		handleRestOfPage('.js-nav-overlay');
 		navOverlay.classList.toggle('hidden');
 	}));
 
@@ -12,7 +12,15 @@
 	const overlay = document.querySelector('.js-product-details-overlay');
 
 	[...buttons].forEach(button => button.addEventListener('click', () => {
+		handleRestOfPage('.js-product-details-overlay');
 		overlay.classList.toggle('hidden');
 	}));
+
+	function handleRestOfPage (selector) {
+		const everything = document.querySelectorAll(`*:not(${selector})`);
+		[...everything].forEach(element => {
+			element.style.overflow = element.style.overflow === 'hidden' ? 'visible' : 'hidden';
+		});
+	}
 
 })();

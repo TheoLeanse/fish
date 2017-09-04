@@ -3,27 +3,27 @@
 make: html css js copy-images copy-fonts todo
 
 html:
-	mkdir -p dist
-	node scripts/template.js
+	@mkdir -p dist
+	@node scripts/template.js
 
 css:
-	mkdir -p dist
-	cp main.css dist/main.css
+	@mkdir -p dist
+	@cp main.css dist/main.css
 
 js:
-	mkdir -p dist
-	cp main.js dist/main.js
+	@mkdir -p dist
+	@cp main.js dist/main.js
 
 copy-images:
-	mkdir -p dist
-	cp -a images/g-optimized/ dist
+	@mkdir -p dist
+	@cp -a images/g-optimized/ dist
 
 copy-fonts:
-	mkdir -p dist
-	cp -a fonts dist
+	@mkdir -p dist
+	@cp -a fonts dist
 
 webp:
-	mkdir -p dist/images
+	@mkdir -p dist/images
 	~/Downloads/cwebp -preset photo -q 75 images/g-optimized/home-l.jpg -o dist/images/home-l.webp
 	~/Downloads/cwebp -preset photo -q 75 images/g-optimized/products-1-l.jpg -o dist/images/products-1-l.webp
 	~/Downloads/cwebp -preset photo -q 75 images/g-optimized/products-2-l.jpg -o dist/images/products-2-l.webp
@@ -41,7 +41,7 @@ webp:
 	~/Downloads/cwebp -preset photo -q 75 images/g-optimized/sustainability-s.jpg -o dist/images/sustainability-s.webp
 
 guetzli:
-	mkdir -p images/g-optimized
+	@mkdir -p images/g-optimized
 	guetzli --quality 84 images/home-l.jpg images/g-optimized/home-l.jpg
 	guetzli --quality 84 images/products-1-l.jpg images/g-optimized/products-1-l.jpg
 	guetzli --quality 84 images/products-2-l.jpg images/g-optimized/products-2-l.jpg
@@ -59,6 +59,9 @@ guetzli:
 	guetzli --quality 84 images/map-s.jpg images/g-optimized/map-s.jpg
 
 todo:
-	echo UGLIFY
-	echo GZIP
-	echo INLINE CSS
+	@echo TODO: UGLIFY JS
+	@echo TODO: CAN I GZIP?
+	@echo TODO: INLINE CSS
+	@echo TODO: BROWSER SUPPORT
+	@echo TODO: PROGRESSIVE ENHANCEMENT
+	@echo TODO: RESIZE IMAGES WITH responsivebreakpoints.com
