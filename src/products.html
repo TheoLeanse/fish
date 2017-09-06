@@ -4,7 +4,7 @@
 </div>
 
 <div class="content">
-	<div class="content--inner">
+	<div class="content--inner--products-hack">
 		<p class="title">WILD CAUGHT SHELLFISH</p>
 		<ul class="product-list">
 			<li>Native Lobster*</li>
@@ -31,8 +31,10 @@
 			<li>Prawns</li>
 		</ul>
 
-		<button class="order-button js-product-details-toggle" data-overlay-name="wild-caught-shellfish">PRODUCT DETAILS</button>
-		<a href="./orders" class="order-button">ORDER SHELLFISH</a>
+		<div class="order-button js-product-details-toggle" data-overlay-name="wild-caught-shellfish">
+			<span data-overlay-name="wild-caught-shellfish" class="order-button--text">PRODUCT DETAILS</span>
+		</div>
+		<a href="./orders" class="order-button"><span class="order-button--text">ORDER</span></a>
 
 	</div>
 </div>
@@ -42,7 +44,7 @@
 </div>
 
 <div class="content">
-	<div class="content--inner">
+	<div class="content--inner--products-hack">
 		<p class="title">WILD CAUGHT FISH</p>
 		<ul class="product-list">
 			<li>Sea Bass</li>
@@ -69,7 +71,10 @@
 			<li>Sashimi Grade Tuna Loin</li>
 		</ul>
 
-		<button class="order-button js-product-details-toggle" data-overlay-name="wild-caught-fish">PRODUCT DETAILS</button>
+		<div class="order-button js-product-details-toggle" data-overlay-name="wild-caught-fish">
+			<span data-overlay-name="wild-caught-fish" class="order-button--text">PRODUCT DETAILS</span>
+		</div>
+		<a href="./orders" class="order-button"><span class="order-button--text">ORDER</span></a>
 
 		<p class="title">SPANISH WILD CAUGHT FISH</p>
 		<ul class="product-list">
@@ -86,8 +91,10 @@
 			<li>Large Eye Dentex (Cachucho)</li>
 		</ul>
 
-		<button class="order-button js-product-details-toggle" data-overlay-name="spanish-wild-caught-fish">PRODUCT DETAILS</button>
-		<a href="./orders" class="order-button">ORDER WILD FISH</a>
+		<div class="order-button js-product-details-toggle" data-overlay-name="spanish-wild-caught-fish">
+			<span class="order-button--text" data-overlay-name="spanish-wild-caught-fish">PRODUCT DETAILS</span>
+		</div>
+		<a href="./orders" class="order-button"><span class="order-button--text">ORDER</span></a>
 	</div>
 </div>
 
@@ -96,7 +103,7 @@
 </div>
 
 <div class="content">
-	<div class="content--inner">
+	<div class="content--inner--products-hack">
 
 		<p class="title">FARMED FISH</p>
 		<ul class="product-list">
@@ -106,115 +113,15 @@
 			<li>Turbot</li>
 		</ul>
 
-		<button class="order-button js-product-details-toggle" data-overlay-name="farmed-fish">PRODUCT DETAILS</button>
+		<div class="order-button js-product-details-toggle" data-overlay-name="farmed-fish">
+			<span data-overlay-name="farmed-fish" class="order-button--text">PRODUCT DETAILS</span>
+		</div>
 
-		<a href="./orders" class="order-button">ORDER FARMED FISH</a>
+		<a href="./orders" class="order-button"><span class="order-button--text">ORDER</span></a>
 
 	</div>
 </div>
 
 {{> productOverlays }}
 
-<div class="js-product-details-overlay overlay hidden" data-overlay-name="wild-caught-shellfish">
-	<button class="js-product-details-toggle close-button" data-overlay-name="wild-caught-shellfish"><img src="./icons/cross.svg" data-overlay-name="wild-caught-shellfish"></button>
-	<h3>Product Details</h3>
-	<p class="title">WILD CAUGHT SHELLFISH</p>
-	<ul>
-
-		<li class="product-item">
-			<div class="product-item-row">NATIVE LOBSTER</div>
-			<div class="product-item-row">
-				<div>400-480G</div>
-				<div>480-540G</div>
-				<div>540-620G</div>
-				<div>620-740G</div>
-				<div>740G-1kg</div>
-				<div>1-1.4Kg</div>
-				<div>1.4-1.8Kg</div>
-				<div>1.8Kg +</div>
-				<div>Cripples</div>
-			</div>
-			<div class="product-item-row">ENGLISH, WELSH AND SCOTTISH POTTED</div>
-		</li>
-
-		<li class="product-item">
-			<div class="product-item-row">CANADIAN LOBSTER</div>
-			<div class="product-item-row">
-				<div>400-480G</div>
-				<div>480-540G</div>
-				<div>540-620G</div>
-				<div>620-740G</div>
-				<div>740G-1kg</div>
-				<div>1-1.4Kg</div>
-				<div>1.4-1.8Kg</div>
-				<div>1.8Kg +</div>
-				<div>Cripples</div>
-
-			</div>
-			<div class="product-item-row">NOVA SCOTIA POTTED</div>
-		</li>
-
-		<li class="product-item">
-			<div class="product-item-row">NATIVE BROWN CRAB</div>
-			<div class="product-item-row">
-				<div>450-900G</div>
-				<div>900G-1.35Kg</div>
-				<div>1.35-1.8Kg</div>
-				<div>1.8Kg +</div>
-				<div>600-900G</div>
-				<div>900G-1.2Kg</div>
-			</div>
-			<div class="product-item-row">ENGLISH, WELSH AND SCOTTISH POTTED</div>
-		</li>
-
-		<li class="product-item">
-			<div class="product-item-row">HAND PICKED SELSEY CRAB</div>
-			<div class="product-item-row">
-				<div>(White)</div>
-				<div>(Brown)</div>
-				<div>(Mixed)</div>
-			</div>
-			<div class="product-item-row">ENGLISH POTTED</div>
-		</li>
-
-		<li class="product-item">
-			<div class="product-item-row">NATIVE SCALLOPS</div>
-			<div class="product-item-row">
-				<div>In shell</div>
-				<div>Meat (roe on)</div>
-			</div>
-			<div class="product-item-row">
-				<div>ENGLISH AND SCOTTISH HAND-DIVED</div>
-				<div>ENGLISH AND SCOTTISH TRAWLED</div>
-			</div>
-		</li>
-
-		<li class="product-item">
-			<div class="product-item-row">QUEEN SCALLOPS</div>
-			<div class="product-item-row"><div>Meat (roe on/off)</div></div>
-			<div class="product-item-row">SCOTTISH TRAWLED</div>
-		</li>
-
-		<li class="product-item">
-			<div class="product-item-row">SCALLOPS</div>
-			<div class="product-item-row"><div>Meat (roe off)</div></div>
-			<div class="product-item-row">GEORGE BANKS, USA TRAWLED</div>
-		</li>
-
-		<li class="product-item">
-			<div class="product-item-row">RAZOR CLAMS</div>
-			<div class="product-item-row">
-				<div>XL</div>
-				<div>L</div>
-			</div>
-			<div class="product-item-row">SCOTTISH DIVED</div>
-		</li>
-
-		<li class="product-item">
-			<div class="product-item-row">PALOURDE CLAMS</div>
-			<div class="product-item-row"><div>JUMBO 60 Pcs/kg</div></div>
-			<div class="product-item-row">ENGLISH HAND PICKED</div>
-		</li>
-
-</div>
 {{/layout}}
