@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := make
 
-make: html css js copy-images copy-fonts todo
+make: html css js copy-images copy-fonts todo copy-icons
 
 html:
 	@mkdir -p dist
@@ -21,6 +21,14 @@ copy-images:
 copy-fonts:
 	@mkdir -p dist
 	@cp -a fonts dist
+
+copy-icons:
+	@mkdir -p dist
+	@cp -a icons dist
+
+copy-favicon:
+	@mkdir -p dist
+	@cp src/favicon.png dist
 
 webp:
 	@mkdir -p dist/images

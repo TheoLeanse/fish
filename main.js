@@ -9,10 +9,12 @@
 	}));
 
 	const buttons = document.querySelectorAll('.js-product-details-toggle');
-	const overlay = document.querySelector('.js-product-details-overlay');
+	const overlays = document.querySelectorAll('.js-product-details-overlay');
 
-	[...buttons].forEach(button => button.addEventListener('click', () => {
+	[...buttons].forEach(button => button.addEventListener('click', (e) => {
 		handleRestOfPage('.js-product-details-overlay');
+///		const overlayName = e.target.dataset.overlayName;
+		const overlay = [...overlays].find(el => el.dataset.overlayName === e.target.dataset.overlayName);
 		overlay.classList.toggle('hidden');
 	}));
 

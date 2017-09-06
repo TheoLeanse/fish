@@ -1,0 +1,20 @@
+{{#productCategories}}
+<div class="js-product-details-overlay overlay hidden" data-overlay-name="{{id}}">
+	<button class="js-product-details-toggle close-button" data-overlay-name="{{id}}"><img src="./icons/cross.svg" data-overlay-name="{{id}}"></button>
+	<h3>Product Details</h3>
+	<p class="title">{{name}}</p>
+	<ul>
+		{{#items}}
+		<li class="product-item">
+			<div class="product-item-row">{{name}}</div>
+			<div class="product-item-row">
+				{{#weights}}
+				<div>{{.}}</div>
+				{{/weights}}
+			</div>
+			<div class="product-item-row">{{#provenance}}<div>{{.}}</div>{{/provenance}}</div>
+		</li>
+		{{/items}}
+	</ul>
+</div>
+{{/productCategories}}

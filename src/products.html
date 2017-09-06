@@ -31,7 +31,7 @@
 			<li>Prawns</li>
 		</ul>
 
-		<button class="order-button js-product-details-toggle">PRODUCT DETAILS</button>
+		<button class="order-button js-product-details-toggle" data-overlay-name="wild-caught-shellfish">PRODUCT DETAILS</button>
 		<a href="./orders" class="order-button">ORDER SHELLFISH</a>
 
 	</div>
@@ -69,6 +69,8 @@
 			<li>Sashimi Grade Tuna Loin</li>
 		</ul>
 
+		<button class="order-button js-product-details-toggle" data-overlay-name="wild-caught-fish">PRODUCT DETAILS</button>
+
 		<p class="title">SPANISH WILD CAUGHT FISH</p>
 		<ul class="product-list">
 			<li>Tunny Tuna (Bacoreta)</li>
@@ -84,6 +86,7 @@
 			<li>Large Eye Dentex (Cachucho)</li>
 		</ul>
 
+		<button class="order-button js-product-details-toggle" data-overlay-name="spanish-wild-caught-fish">PRODUCT DETAILS</button>
 		<a href="./orders" class="order-button">ORDER WILD FISH</a>
 	</div>
 </div>
@@ -103,13 +106,17 @@
 			<li>Turbot</li>
 		</ul>
 
+		<button class="order-button js-product-details-toggle" data-overlay-name="farmed-fish">PRODUCT DETAILS</button>
+
 		<a href="./orders" class="order-button">ORDER FARMED FISH</a>
 
 	</div>
 </div>
 
-<div class="js-product-details-overlay overlay hidden">
-	<button class="js-product-details-toggle close-button">X</button>
+{{> productOverlays }}
+
+<div class="js-product-details-overlay overlay hidden" data-overlay-name="wild-caught-shellfish">
+	<button class="js-product-details-toggle close-button" data-overlay-name="wild-caught-shellfish"><img src="./icons/cross.svg" data-overlay-name="wild-caught-shellfish"></button>
 	<h3>Product Details</h3>
 	<p class="title">WILD CAUGHT SHELLFISH</p>
 	<ul>
