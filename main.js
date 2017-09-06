@@ -2,9 +2,11 @@
 
 	const navToggles = document.querySelectorAll('.js-nav-toggle');
 	const navOverlay = document.querySelector('.js-nav-overlay');
+	const hamburger = document.querySelector('.hamburger');
 
 	[...navToggles].forEach(button => button.addEventListener('click', () => {
 		handleRestOfPage('.js-nav-overlay');
+		hamburger.classList.toggle('hidden');
 		navOverlay.classList.toggle('hidden');
 	}));
 
