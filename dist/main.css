@@ -9,8 +9,13 @@
 }
 
 @font-face {
-  font-family "AkzidenzGrotesk";
-  src: url("fonts/Akzidenz-Grotesk.woff")
+  font-family "AkzidenzGroteskLight";
+  src: url("fonts/AkzidenzGroteskLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family "AkzidenzGroteskSuper";
+  src: url("fonts/AkzidenzGroteskSuper.otf") format("opentype");
 }
 
 a {
@@ -68,7 +73,7 @@ header {
 }
 
 .nav-desktop {
-  font-family: AkzidenzGrotezk, sans-serif;
+  font-family: AkzidenzGroteskLight, sans-serif;
 }
 
 .menu {
@@ -114,19 +119,12 @@ footer {
 }
 
 .footer--logo--container {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .footer--logo {
-  font-family: AkzidenzGrotesk, sans-serif;
-  font-weight: 600;
-  background: white;
   margin-top: -25px;
-  border: 1px solid black;
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  width: 25%;
 }
 
 .footer--slice {
@@ -175,7 +173,7 @@ p {
 }
 
 .order-button {
-  font-family: AkzidenzGrotezk, sans-serif;
+  font-family: AkzidenzGroteskLight, sans-serif;
   display: inline-block;
   background: inherit;
   border: 1px solid black;
@@ -218,10 +216,7 @@ p {
 
 .close-button {
   margin-top: 30px;
-  margin-bottom: 30px;
-  color: white;
-  border: 1px solid white;
-  border-radius: 100%;
+  border: none;
   height: 50px;
   width: 50px;
   background: none;
@@ -236,7 +231,7 @@ p {
 .nav-mobile {
   display: flex;
   justify-content: center;
-  font-family: AkzidenzGrotezk, sans-serif;
+  font-family: AkzidenzGroteskLight, sans-serif;
 }
 
 .nav-mobile-menu-item:first-child {
@@ -249,6 +244,14 @@ p {
 }
 
 @media (max-width: 700px) {
+
+  header {
+	position: sticky;
+	top: -1px;
+	z-index: 1;
+	background: white;
+  }
+
   .nav-desktop {
 	display: none;
   }
@@ -256,12 +259,11 @@ p {
   .hamburger {
 	z-index: 1;
 	display: block;
-	position: sticky;
-	top: -1px;
-	background: white;
-	border-bottom: 1px black solid;
-	padding: 1em;
-	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 50px;
+	width: 50px;
   }
 
   .footer {
@@ -277,6 +279,9 @@ p {
 	border-top: 1px solid black;
   }
 
+  .footer--logo {
+	width: 50%;
+  }
 }
 
 .hidden {
@@ -284,7 +289,7 @@ p {
 }
 
 .product-item {
-  font-family: AkzidenzGrotezk, sans-serif;
+  font-family: AkzidenzGroteskLight, sans-serif;
   border-top: white 1px solid;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -313,7 +318,7 @@ p {
 }
 
 .title {
-  font-family: AkzidenzGrotezk, sans-serif;
+  font-family: AkzidenzGroteskSuper, sans-serif;
   font-weight: 600;
 }
 

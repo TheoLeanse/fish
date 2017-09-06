@@ -14,18 +14,17 @@
 			<header>
 				<a href="./" class="header">
 					<h1 class="header--text">Fish & Lobster Co.</h1>
-					<img class="header--logo" src="./images/logo.png"/>
+					<img class="header--logo" src="./icons/logo.svg"/>
 					<h2 class="header--text">Retail & Wholesale</h2>
 				</a>
+				<div class="hamburger">
+					<button class="js-nav-toggle"><img src="./icons/hamburger.svg"></button>
+				</div>
 			</header>
-
-			<div class="hamburger">
-				<button class="js-nav-toggle">NAV</button>
-			</div>
 
 			<nav class="nav-mobile overlay hidden js-nav-overlay">
 				<div class="nav-mobile--inner">
-				<button class="js-nav-toggle close-button">X</button>
+				<button class="js-nav-toggle close-button"><img src="./icons/cross.svg"></button>
 				<ul>
 					<a href="./about"><li class="nav-mobile-menu-item">THE SELSEA STORY</li></a>
 					<a href="./sustainability"><li class="nav-mobile-menu-item">SUSTAINABILITY</li></a>
@@ -82,7 +81,7 @@
 						<li>Prawns</li>
 					</ul>
 			
-					<button class="order-button js-product-details-toggle">PRODUCT DETAILS</button>
+					<button class="order-button js-product-details-toggle" data-overlay-name="wild-caught-shellfish">PRODUCT DETAILS</button>
 					<a href="./orders" class="order-button">ORDER SHELLFISH</a>
 			
 				</div>
@@ -126,6 +125,8 @@
 						<li>Sashimi Grade Tuna Loin</li>
 					</ul>
 			
+					<button class="order-button js-product-details-toggle" data-overlay-name="wild-caught-fish">PRODUCT DETAILS</button>
+			
 					<p class="title">SPANISH WILD CAUGHT FISH</p>
 					<ul class="product-list">
 						<li>Tunny Tuna (Bacoreta)</li>
@@ -141,6 +142,7 @@
 						<li>Large Eye Dentex (Cachucho)</li>
 					</ul>
 			
+					<button class="order-button js-product-details-toggle" data-overlay-name="spanish-wild-caught-fish">PRODUCT DETAILS</button>
 					<a href="./orders" class="order-button">ORDER WILD FISH</a>
 				</div>
 			</div>
@@ -166,13 +168,453 @@
 						<li>Turbot</li>
 					</ul>
 			
+					<button class="order-button js-product-details-toggle" data-overlay-name="farmed-fish">PRODUCT DETAILS</button>
+			
 					<a href="./orders" class="order-button">ORDER FARMED FISH</a>
 			
 				</div>
 			</div>
 			
-			<div class="js-product-details-overlay overlay hidden">
-				<button class="js-product-details-toggle close-button">X</button>
+			<div class="js-product-details-overlay overlay hidden" data-overlay-name="wild-caught-shellfish">
+				<button class="js-product-details-toggle close-button" data-overlay-name="wild-caught-shellfish"><img src="./icons/cross.svg" data-overlay-name="wild-caught-shellfish"></button>
+				<h3>Product Details</h3>
+				<p class="title">WILD CAUGHT SHELLFISH</p>
+				<ul>
+					<li class="product-item">
+						<div class="product-item-row">NATIVE LOBSTER</div>
+						<div class="product-item-row">
+							<div>400–480g</div>
+							<div>480–540g</div>
+							<div>540–620g</div>
+							<div>620–740g</div>
+							<div>740g–1kg</div>
+							<div>1–1.4kg</div>
+							<div>1.4–1.8kg</div>
+							<div>1.8kg+</div>
+							<div>Cripples</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH, WELSH AND SCOTTISH POTTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">CANADIAN LOBSTER</div>
+						<div class="product-item-row">
+							<div>400–480g</div>
+							<div>480–540g</div>
+							<div>540–620g</div>
+							<div>620–740g</div>
+							<div>740G–1kg</div>
+							<div>1–1.4kg</div>
+							<div>1.4–1.8kg</div>
+							<div>1.8kg+</div>
+							<div>Cripples</div>
+						</div>
+						<div class="product-item-row"><div>NOVA SCOTIA POTTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">NATIVE BROWN CRAB</div>
+						<div class="product-item-row">
+							<div>450–900g</div>
+							<div>900g–1.35kg</div>
+							<div>1.35–1.8kg</div>
+							<div>1.8kg+</div>
+							<div>600–900g</div>
+							<div>900g–1.2kg</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH, WELSH AND SCOTTISH POTTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">HAND PICKED SELSEY CRAB</div>
+						<div class="product-item-row">
+							<div>(White)</div>
+							<div>(Brown)</div>
+							<div>(Mixed)</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH POTTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">NATIVE SCALLOPS</div>
+						<div class="product-item-row">
+							<div>In shell</div>
+							<div>Meat (roe on)</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH AND SCOTTISH HAND-DIVED</div><div>ENGLISH AND SCOTTISH TRAWLED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">QUEEN SCALLOPS</div>
+						<div class="product-item-row">
+							<div>Meat (roe on/off)</div>
+						</div>
+						<div class="product-item-row"><div>SCOTTISH TRAWLED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">SCALLOPS</div>
+						<div class="product-item-row">
+							<div>Meat (roe off)</div>
+						</div>
+						<div class="product-item-row"><div>GEORGE BANKS, USA TRAWLED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">RAZOR CLAMS</div>
+						<div class="product-item-row">
+							<div>XL</div>
+							<div>L</div>
+						</div>
+						<div class="product-item-row"><div>SCOTTISH DIVED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">PALOURDE CLAMS</div>
+						<div class="product-item-row">
+							<div>JUMBO 60 Pcs/kg</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH HAND PICKED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">COCKLES</div>
+						<div class="product-item-row">
+							<div>Large</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH HAND PICKED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">WHELKS</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>ENGLISH POTTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">JERSEY ROYAL OYSTERS</div>
+						<div class="product-item-row">
+							<div>No.2</div>
+							<div>No.3</div>
+							<div>No.4</div>
+						</div>
+						<div class="product-item-row"><div>CHANNEL ISLANDS</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">WILD RED PRAWNS</div>
+						<div class="product-item-row">
+							<div>10-20 PIECES/kg</div>
+							<div>20-30 PIECES/kg</div>
+						</div>
+						<div class="product-item-row"><div>ARGENTINIAN TRAWLED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">CUTTLEFISH</div>
+						<div class="product-item-row">
+							<div>500g–1kg</div>
+							<div>1–2kg</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH POTTED OR TRAWLED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">FRESH ROCK OCTOPUS</div>
+						<div class="product-item-row">
+							<div>Large</div>
+							<div>Medium</div>
+							<div>Large (Cooked)</div>
+							<div>Medium (Cooked)</div>
+						</div>
+						<div class="product-item-row"><div>SPANISH POTTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">SQUID</div>
+						<div class="product-item-row">
+							<div>16-25cm</div>
+							<div>16-25cm</div>
+							<div>25cm+</div>
+						</div>
+						<div class="product-item-row"><div>SOUTH AFRICAN TRAWLED</div><div>SCOTTISH TRAWLED</div></div>
+					</li>
+				</ul>
+			</div>
+			<div class="js-product-details-overlay overlay hidden" data-overlay-name="wild-caught-fish">
+				<button class="js-product-details-toggle close-button" data-overlay-name="wild-caught-fish"><img src="./icons/cross.svg" data-overlay-name="wild-caught-fish"></button>
+				<h3>Product Details</h3>
+				<p class="title">WILD CAUGHT FISH</p>
+				<ul>
+					<li class="product-item">
+						<div class="product-item-row">SEABASS</div>
+						<div class="product-item-row">
+							<div>600–800g</div>
+							<div>800g–1kg</div>
+							<div>1–2kg</div>
+							<div>2–3kg</div>
+							<div>3kg+</div>
+							<div>4kg+</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH, CORNISH AND WELSH LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">HAKE</div>
+						<div class="product-item-row">
+							<div>500g–1kg</div>
+							<div>1–2kg</div>
+							<div>2kg+</div>
+						</div>
+						<div class="product-item-row"><div>CORNISH LINE CAUGHT OR SCOTTISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">WHITING</div>
+						<div class="product-item-row">
+							<div>250–500g</div>
+						</div>
+						<div class="product-item-row"><div>CORNISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">CONGER</div>
+						<div class="product-item-row">
+							<div>500g–1kg</div>
+							<div>1–2kg</div>
+							<div>2–5kg</div>
+							<div>5kg+</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH AND CORNISH NETTED OR POTTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">BLACK BREAM</div>
+						<div class="product-item-row">
+							<div>300–400g</div>
+							<div>400–600g</div>
+							<div>600–800g</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH LINE CAUGHT OR NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">COD FILLET</div>
+						<div class="product-item-row">
+							<div>(MSC)</div>
+						</div>
+						<div class="product-item-row"><div>ICELANDIC LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">HADDOCK FILLET</div>
+						<div class="product-item-row">
+							<div>(MSC)</div>
+						</div>
+						<div class="product-item-row"><div>ICELANDIC LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">MONK FISH</div>
+						<div class="product-item-row">
+							<div>500–1kg</div>
+							<div>1–2kg</div>
+							<div>2–4kg</div>
+						</div>
+						<div class="product-item-row"><div>CORNISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">MULLET</div>
+						<div class="product-item-row">
+							<div>500g–1kg</div>
+							<div>1–2kg</div>
+							<div>2kg+</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH LINE CAUGHT AND NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">TURBOT</div>
+						<div class="product-item-row">
+							<div>500g–1kg</div>
+							<div>1–2kg</div>
+							<div>2–3kg</div>
+							<div>3kg+</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH OR CORNISH LINE CAUGHT AND NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">BRILL</div>
+						<div class="product-item-row">
+							<div>300–500g</div>
+							<div>500g–1kg</div>
+							<div>1–2kg</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH OR CORNISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">PLAICE</div>
+						<div class="product-item-row">
+							<div>350–450g</div>
+							<div>450–560g</div>
+							<div>560–680g</div>
+							<div>680–900g</div>
+							<div>900g+</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH OR CORNISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">DOVER SOLE</div>
+						<div class="product-item-row">
+							<div>280–330g</div>
+							<div>330–400g</div>
+							<div>400g–450g</div>
+							<div>450–500g</div>
+							<div>500–560g</div>
+							<div>560–670g</div>
+							<div>670g+</div>
+						</div>
+						<div class="product-item-row"><div>ENGLISH OR CORNISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">LEMON SOLE</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>CORNISH OR SCOTTISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">SARDINES</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>ENGLISH OR CORNISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">MACKEREL</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>CORNISH OR SCOTTISH LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">HERRING</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>ENGLISH OR CORNISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">TUNA LOIN</div>
+						<div class="product-item-row">
+							<div>2–3kg</div>
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">SWORDFISH LOIN</div>
+						<div class="product-item-row">
+							<div>2–3kg</div>
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">SASHIMI GRADE TUNA LOIN</div>
+						<div class="product-item-row">
+							<div>2–4kg</div>
+						</div>
+						<div class="product-item-row"><div>INDIAN OCEAN NETTED</div></div>
+					</li>
+				</ul>
+			</div>
+			<div class="js-product-details-overlay overlay hidden" data-overlay-name="spanish-wild-caught-fish">
+				<button class="js-product-details-toggle close-button" data-overlay-name="spanish-wild-caught-fish"><img src="./icons/cross.svg" data-overlay-name="spanish-wild-caught-fish"></button>
+				<h3>Product Details</h3>
+				<p class="title">SPANISH WILD CAUGHT FISH</p>
+				<ul>
+					<li class="product-item">
+						<div class="product-item-row">TUNNY TUNA (Bacoreta)</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">MORALLA (dayboat mixture for paella/soups)</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">SALEMA (Salpa)</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">SPANISH HORSE MACKEREL (Jurel)</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">SABRE FISH/CUTLASS FISH (Sable)</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">ATLANTIC POMFRET (Palometa)</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">POMPANO PANDOR (Breca)</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">CORVINA</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">BLUE FISH (Lirio)</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">LARGE EYE DENTEX (Cachucho)</div>
+						<div class="product-item-row">
+						</div>
+						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
+					</li>
+				</ul>
+			</div>
+			<div class="js-product-details-overlay overlay hidden" data-overlay-name="farmed-fish">
+				<button class="js-product-details-toggle close-button" data-overlay-name="farmed-fish"><img src="./icons/cross.svg" data-overlay-name="farmed-fish"></button>
+				<h3>Product Details</h3>
+				<p class="title">FARMED FISH</p>
+				<ul>
+					<li class="product-item">
+						<div class="product-item-row">SEABASS</div>
+						<div class="product-item-row">
+							<div>500–600g</div>
+							<div>600–800g</div>
+							<div>800–1kg</div>
+							<div>1–1.5kg</div>
+						</div>
+						<div class="product-item-row"><div>SPANISH</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">SEA BREAM</div>
+						<div class="product-item-row">
+							<div>400–600g</div>
+							<div>600–800g</div>
+						</div>
+						<div class="product-item-row"><div>SPANISH</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">DOVER SOLE</div>
+						<div class="product-item-row">
+							<div>400–600g</div>
+							<div>600–800g</div>
+							<div>800–1kg</div>
+						</div>
+						<div class="product-item-row"><div>SPANISH</div></div>
+					</li>
+					<li class="product-item">
+						<div class="product-item-row">TURBOT</div>
+						<div class="product-item-row">
+							<div>600–800g</div>
+							<div>800–1kg</div>
+							<div>1–1.5kg</div>
+							<div>1.5–2kg</div>
+						</div>
+						<div class="product-item-row"><div>SPANISH</div></div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="js-product-details-overlay overlay hidden" data-overlay-name="wild-caught-shellfish">
+				<button class="js-product-details-toggle close-button" data-overlay-name="wild-caught-shellfish"><img src="./icons/cross.svg" data-overlay-name="wild-caught-shellfish"></button>
 				<h3>Product Details</h3>
 				<p class="title">WILD CAUGHT SHELLFISH</p>
 				<ul>
@@ -288,10 +730,7 @@
 					</div>
 				</div>
 				<div class="footer--logo--container">
-					<div class="footer--logo">
-						<p>SELSEA</p>
-						<p>FISH & LOBSTER CO. LTD.</p>
-					</div>
+					<img class="footer--logo" src="./icons/footer.png">
 				</div>
 			</footer>
 		</main>
