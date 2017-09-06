@@ -26,10 +26,6 @@ copy-icons:
 	@mkdir -p dist
 	@cp -a icons dist
 
-copy-favicon:
-	@mkdir -p dist
-	@cp src/favicon.png dist
-
 webp:
 	@mkdir -p dist/images
 	~/Downloads/cwebp -preset photo -q 75 images/g-optimized/home-l.jpg -o dist/images/home-l.webp
