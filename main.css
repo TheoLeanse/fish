@@ -67,7 +67,6 @@ header {
   margin: 0;
   display: inline-block;
   font-size: 1em;
-  font-weight: 400;
   font-family: LusitanaRegular, serif;
 }
 
@@ -101,7 +100,6 @@ header {
   transform: translate(-50%, -50%);
   margin: 0;
   text-align: center;
-  font-weight: 600;
   font-family: LusitanaBold;
   color: white;
   font-size: 2em;
@@ -258,9 +256,11 @@ p {
 
 .close-button--nav {
   margin-top: 0;
+  padding: 0;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
+  width: 60px;
 }
 
 .nav-mobile {
@@ -270,7 +270,7 @@ p {
 }
 
 .nav-mobile--inner {
-  margin-top: 6em;
+  margin-top: 5em;
   width: 100%;
 }
 
@@ -281,6 +281,7 @@ p {
 .nav-mobile-menu-item {
   padding: 3em;
   border-bottom: solid white 1px;
+  font-size: 22px;
 }
 
 .product-item {
@@ -294,7 +295,6 @@ p {
 .product-item-row:first-child {
   flex: 2;
   text-align: right;
-  font-weight: 600;
 }
 
 .product-item-row:nth-child(2) {
@@ -314,11 +314,14 @@ p {
 
 .title {
   font-family: HelveticaHeavy, sans-serif;
-  font-weight: 600;
 }
 
 .product-list {
   font-family: LusitanaBold;
+}
+
+.desktop-nav-current {
+  opacity: 0.5;
 }
 
 @media (max-width: 700px) {
@@ -356,9 +359,9 @@ p {
 	z-index: 1;
 	display: block;
 	position: absolute;
-	top: 0;
-	right: 0;
-	width: 50px;
+	top: 10px;
+	right: 10px;
+	width: 60px;
   }
 
   .footer {
@@ -385,6 +388,7 @@ p {
   .product-item-row:first-child {
 	text-align: left;
   }
+
   .product-item-row {
 	padding: 10px;
   }

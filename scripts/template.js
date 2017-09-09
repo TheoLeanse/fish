@@ -15,6 +15,13 @@ hbs.registerPartial('layout', layout);
 hbs.registerPartial('picture', picture);
 hbs.registerPartial('productOverlays', productOverlays);
 
+hbs.registerHelper('ifEq', function(v1, v2, options) {
+	if(v1 === v2) {
+		return options.fn(this);
+	}
+	return options.inverse(this);
+});
+
 const indexTemplate = hbs.compile(index);
 const aboutTemplate = hbs.compile(about);
 const sustainabilityTemplate = hbs.compile(sustainability);
@@ -33,9 +40,8 @@ const productCategories = [
 	farmedFish
 ];
 
-write(`${cwd}/dist/index.html`, indexTemplate());
-write(`${cwd}/dist/about.html`, aboutTemplate());
-write(`${cwd}/dist/sustainability.html`, sustainabilityTemplate());
-write(`${cwd}/dist/products.html`, productsTemplate({ productCategories }));
-
-write(`${cwd}/dist/orders.html`, ordersTemplate());
+write(`${cwd}/dist/index.html`, indexTemplate({ currentPage: 'index' }));
+write(`${cwd}/dist/about.html`, aboutTemplate({ currentPage: 'about' }));
+write(`${cwd}/dist/sustainability.html`, sustainabilityTemplate({ currentPage: 'sustainability' }));
+write(`${cwd}/dist/products.html`, productsTemplate({ productCategories, currentPage: 'products' }));
+write(`${cwd}/dist/orders.html`, ordersTemplate({ currentPage: 'orders' }));
