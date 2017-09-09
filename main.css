@@ -1,21 +1,21 @@
 @font-face {
   font-family:"LusitanaRegular";
-  src: url("fonts/Lusitana-Regular.ttf") /* TTF file for CSS3 browsers */
+  src: url("./fonts/Lusitana-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family:"LusitanaBold";
-  src: url("fonts/Lusitana-Bold.ttf") /* TTF file for CSS3 browsers */
+  src: url("./fonts/Lusitana-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family "AkzidenzGroteskLight";
-  src: url("fonts/AkzidenzGroteskLight.otf") format("opentype");
+  font-family: "HelveticaHeavy";
+  src: url("./fonts/34A22F_0_0.woff") format("woff");
 }
 
 @font-face {
-  font-family "AkzidenzGroteskSuper";
-  src: url("fonts/AkzidenzGroteskSuper.otf") format("opentype");
+  font-family: "HelveticaLight";
+  src: url("./fonts/34A22F_1_0.woff") format("woff");
 }
 
 a {
@@ -77,7 +77,7 @@ header {
 }
 
 .nav-desktop {
-  font-family: AkzidenzGroteskLight, sans-serif;
+  font-family: HelveticaLight, sans-serif;
 }
 
 .menu {
@@ -193,7 +193,7 @@ p {
 }
 
 .order-button {
-  font-family: AkzidenzGroteskLight, sans-serif;
+  font-family: HelveticaLight, sans-serif;
   display: inline-block;
   border: 1px solid black;
   padding: 0.5em;
@@ -266,11 +266,12 @@ p {
 .nav-mobile {
   display: flex;
   justify-content: center;
-  font-family: AkzidenzGroteskLight, sans-serif;
+  font-family: HelveticaLight, sans-serif;
 }
 
 .nav-mobile--inner {
   margin-top: 6em;
+  width: 100%;
 }
 
 .nav-mobile-menu-item--first {
@@ -280,6 +281,44 @@ p {
 .nav-mobile-menu-item {
   padding: 3em;
   border-bottom: solid white 1px;
+}
+
+.product-item {
+  font-family: HelveticaLight, sans-serif;
+  border-top: white 1px solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.product-item-row:first-child {
+  flex: 2;
+  text-align: right;
+  font-weight: 600;
+}
+
+.product-item-row:nth-child(2) {
+  padding-left: 10px;
+  flex: 1;
+  text-align: left;
+}
+
+.product-item-row:nth-child(3) {
+  flex: 2;
+  text-align: left;
+}
+
+.product-item-row > span {
+  display: block;
+}
+
+.title {
+  font-family: HelveticaHeavy, sans-serif;
+  font-weight: 600;
+}
+
+.product-list {
+  font-family: LusitanaBold;
 }
 
 @media (max-width: 700px) {
@@ -338,49 +377,24 @@ p {
   .footer--logo {
 	width: 50%;
   }
+
+  .product-item {
+	display: block;
+  }
+
+  .product-item-row:first-child {
+	text-align: left;
+  }
+  .product-item-row {
+	padding: 10px;
+  }
+
 }
 
 .hidden {
   display: none;
 }
 
-.product-item {
-  font-family: AkzidenzGroteskLight, sans-serif;
-  border-top: white 1px solid;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: flex;
-}
-
-.product-item-row:first-child {
-  flex: 2;
-  text-align: right;
-  font-weight: 600;
-}
-
-.product-item-row:nth-child(2) {
-  padding-left: 10px;
-  flex: 1;
-  text-align: left;
-}
-
-.product-item-row:nth-child(3) {
-  flex: 2;
-  text-align: left;
-}
-
-.product-item-row > span {
-  display: block;
-}
-
-.title {
-  font-family: AkzidenzGroteskSuper, sans-serif;
-  font-weight: 600;
-}
-
-.product-list {
-  font-family: LusitanaBold;
-}
 
 @media (max-width: 400px) {
   .order-button {
