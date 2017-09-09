@@ -63,9 +63,10 @@ guetzli:
 	guetzli --quality 84 images/map-s.jpg images/g-optimized/map-s.jpg
 
 todo:
+	@echo TODO: PROPERLY SIZE IMAGES WITH responsivebreakpoints.com
 	@echo TODO: UGLIFY JS
-	@echo TODO: CAN I GZIP?
 	@echo TODO: INLINE CSS
+	@echo TODO: CAN I GZIP?
 	@echo TODO: BROWSER SUPPORT
 	@echo TODO: PROGRESSIVE ENHANCEMENT
-	@echo TODO: RESIZE IMAGES WITH responsivebreakpoints.com
+	@echo TODO: FONT FALLBACKS FOR OLDER BROWSERS
