@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := make
 
-make: html css js copy-images copy-fonts todo copy-icons
+make: html css js copy-images copy-fonts todo copy-icons copy-pdf
 
 html:
 	@mkdir -p dist
@@ -26,6 +26,9 @@ copy-icons:
 	@mkdir -p dist
 	@cp -a icons dist
 
+copy-pdf:
+	@mkdir -p dist
+	@cp -a pdf dist
 webp:
 	@mkdir -p dist/images
 	~/Downloads/cwebp -preset photo -q 75 images/g-optimized/home-l.jpg -o dist/images/home-l.webp

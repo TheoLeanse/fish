@@ -3,7 +3,7 @@
 	<button class="js-product-details-toggle close-button" data-overlay-name="{{id}}"><img src="./icons/cross.svg" data-overlay-name="{{id}}"></button>
 	<h3>Product Details</h3>
 	<p class="title">{{name}}</p>
-	<ul>
+	<ul class="product-list">
 		{{#items}}
 		<li class="product-item">
 			<div class="product-item-row title">{{name}}</div>
@@ -16,5 +16,6 @@
 		</li>
 		{{/items}}
 	</ul>
+	<button class="js-product-details-toggle close-button" data-overlay-name="{{id}}"><img src="./icons/cross.svg" data-overlay-name="{{id}}"></button>
 </div>
 {{/productCategories}}
