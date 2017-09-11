@@ -58,7 +58,6 @@ header {
   text-align: center;
   border-bottom: solid 1px black;
 }
-
 .header {
   display: flex;
   justify-content: center;
@@ -66,7 +65,6 @@ header {
   height: 6em;
   font-size: 1em;
 }
-
 .header--text {
   margin: 0;
   display: inline-block;
@@ -74,7 +72,6 @@ header {
   font-family: LusitanaRegular, serif;
   font-weight: unset;
 }
-
 .header--logo {
   width: 100px;
   margin: 0 10px;
@@ -87,12 +84,10 @@ header {
 	padding-top: 10px;
 	padding-bottom: 10px;
   }
-
   .header {
 	font-size: 1em;
 	display: inline-block;
   }
-
   .header--text {
 	display: block;
   }
@@ -103,14 +98,12 @@ header {
 .nav-desktop {
   font-family: HelveticaLight, sans-serif;
 }
-
 .menu {
   display: flex;
   justify-content: space-around;
   max-width: 750px;
   margin: 0 auto;
 }
-
 .desktop-nav-current {
   opacity: 0.5;
 }
@@ -121,18 +114,18 @@ header {
   width: 50px;
   margin: -90px auto 0;
   position: relative;
+  cursor: pointer;
 }
-
 .home-close-button {
   width: 2em;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
   .home-open-button {
 	display: none;
   }
-
   .home-extra-content {
 	display: none;
   }
