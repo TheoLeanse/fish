@@ -28,16 +28,16 @@
 				<button class="js-nav-toggle close-button close-button--nav"><img src="./icons/cross.svg"></button>
 				<ul>
 					<a href="./about">
-						<li class="nav-mobile-menu-item nav-mobile-menu-item--first FUCK">THE SELSEA STORY</li>
+						<li class="nav-mobile-menu-item nav-mobile-menu-item--first "><span>THE SELSEA STORY</span></li>
 					</a>
 					<a href="./sustainability">
-						<li class="nav-mobile-menu-item">SUSTAINABILITY</li>
+						<li class="nav-mobile-menu-item "><span>SUSTAINABILITY</span></li>
 					</a>
 					<a href="./products">
-						<li class="nav-mobile-menu-item">PRODUCTS</li>
+						<li class="nav-mobile-menu-item mobile-nav-current"><span>PRODUCTS</span></li>
 					</a>
 					<a href="./orders">
-						<li class="nav-mobile-menu-item">ORDERS</li>
+						<li class="nav-mobile-menu-item "><span>ORDERS</span></li>
 					</a>
 				</ul>
 				</div>
@@ -70,7 +70,7 @@
 				</picture>
 			</div>
 			
-			<div class="content">
+			<div class="content copy">
 				<div class="content--inner--products-hack">
 					<p class="title">WILD CAUGHT SHELLFISH</p>
 					<ul class="product-list">
@@ -98,7 +98,7 @@
 						<li>Prawns</li>
 					</ul>
 			
-					<div class="order-button js-product-details-toggle" data-overlay-name="wild-caught-shellfish">
+					<div class="order-button order-button--first js-product-details-toggle" data-overlay-name="wild-caught-shellfish">
 						<span data-overlay-name="wild-caught-shellfish" class="order-button--text">PRODUCT DETAILS</span>
 					</div>
 					<a href="./orders" class="order-button"><span class="order-button--text">ORDER</span></a>
@@ -116,7 +116,7 @@
 				</picture>
 			</div>
 			
-			<div class="content">
+			<div class="content copy">
 				<div class="content--inner--products-hack">
 					<p class="title">WILD CAUGHT FISH</p>
 					<ul class="product-list">
@@ -127,10 +127,8 @@
 						<li>Black Bream</li>
 						<li>Cod</li>
 						<li>Fillet</li>
-						<li>Haddock</li>
-						<li>Fillet</li>
-						<li>Monk</li>
-						<li>Fish</li>
+						<li>Haddock Fillet</li>
+						<li>Monk Fish</li>
 						<li>Mullet</li>
 						<li>Turbot</li>
 						<li>Plaice</li>
@@ -144,7 +142,7 @@
 						<li>Sashimi Grade Tuna Loin</li>
 					</ul>
 			
-					<div class="order-button js-product-details-toggle" data-overlay-name="wild-caught-fish">
+					<div class="order-button order-button--first js-product-details-toggle" data-overlay-name="wild-caught-fish">
 						<span data-overlay-name="wild-caught-fish" class="order-button--text">PRODUCT DETAILS</span>
 					</div>
 					<a href="./orders" class="order-button"><span class="order-button--text">ORDER</span></a>
@@ -164,7 +162,7 @@
 						<li>Large Eye Dentex (Cachucho)</li>
 					</ul>
 			
-					<div class="order-button js-product-details-toggle" data-overlay-name="spanish-wild-caught-fish">
+					<div class="order-button order-button--first js-product-details-toggle" data-overlay-name="spanish-wild-caught-fish">
 						<span class="order-button--text" data-overlay-name="spanish-wild-caught-fish">PRODUCT DETAILS</span>
 					</div>
 					<a href="./orders" class="order-button"><span class="order-button--text">ORDER</span></a>
@@ -181,7 +179,7 @@
 				</picture>
 			</div>
 			
-			<div class="content">
+			<div class="content copy">
 				<div class="content--inner--products-hack">
 			
 					<p class="title">FARMED FISH</p>
@@ -192,7 +190,7 @@
 						<li>Turbot</li>
 					</ul>
 			
-					<div class="order-button js-product-details-toggle" data-overlay-name="farmed-fish">
+					<div class="order-button order-button--first js-product-details-toggle" data-overlay-name="farmed-fish">
 						<span data-overlay-name="farmed-fish" class="order-button--text">PRODUCT DETAILS</span>
 					</div>
 			
@@ -205,7 +203,7 @@
 				<button class="js-product-details-toggle close-button" data-overlay-name="wild-caught-shellfish"><img src="./icons/cross.svg" data-overlay-name="wild-caught-shellfish"></button>
 				<h3>Product Details</h3>
 				<p class="title">WILD CAUGHT SHELLFISH</p>
-				<ul>
+				<ul class="product-list">
 					<li class="product-item">
 						<div class="product-item-row title">NATIVE LOBSTER</div>
 						<div class="product-item-row">
@@ -352,12 +350,13 @@
 						<div class="product-item-row"><div>SOUTH AFRICAN TRAWLED</div><div>SCOTTISH TRAWLED</div></div>
 					</li>
 				</ul>
+				<button class="js-product-details-toggle close-button" data-overlay-name="wild-caught-shellfish"><img src="./icons/cross.svg" data-overlay-name="wild-caught-shellfish"></button>
 			</div>
 			<div class="js-product-details-overlay overlay hidden" data-overlay-name="wild-caught-fish">
 				<button class="js-product-details-toggle close-button" data-overlay-name="wild-caught-fish"><img src="./icons/cross.svg" data-overlay-name="wild-caught-fish"></button>
 				<h3>Product Details</h3>
 				<p class="title">WILD CAUGHT FISH</p>
-				<ul>
+				<ul class="product-list">
 					<li class="product-item">
 						<div class="product-item-row title">SEABASS</div>
 						<div class="product-item-row">
@@ -526,12 +525,13 @@
 						<div class="product-item-row"><div>INDIAN OCEAN NETTED</div></div>
 					</li>
 				</ul>
+				<button class="js-product-details-toggle close-button" data-overlay-name="wild-caught-fish"><img src="./icons/cross.svg" data-overlay-name="wild-caught-fish"></button>
 			</div>
 			<div class="js-product-details-overlay overlay hidden" data-overlay-name="spanish-wild-caught-fish">
 				<button class="js-product-details-toggle close-button" data-overlay-name="spanish-wild-caught-fish"><img src="./icons/cross.svg" data-overlay-name="spanish-wild-caught-fish"></button>
 				<h3>Product Details</h3>
 				<p class="title">SPANISH WILD CAUGHT FISH</p>
-				<ul>
+				<ul class="product-list">
 					<li class="product-item">
 						<div class="product-item-row title">TUNNY TUNA (Bacoreta)</div>
 						<div class="product-item-row">
@@ -593,12 +593,13 @@
 						<div class="product-item-row"><div>SPANISH NETTED AND LINE CAUGHT</div></div>
 					</li>
 				</ul>
+				<button class="js-product-details-toggle close-button" data-overlay-name="spanish-wild-caught-fish"><img src="./icons/cross.svg" data-overlay-name="spanish-wild-caught-fish"></button>
 			</div>
 			<div class="js-product-details-overlay overlay hidden" data-overlay-name="farmed-fish">
 				<button class="js-product-details-toggle close-button" data-overlay-name="farmed-fish"><img src="./icons/cross.svg" data-overlay-name="farmed-fish"></button>
 				<h3>Product Details</h3>
 				<p class="title">FARMED FISH</p>
-				<ul>
+				<ul class="product-list">
 					<li class="product-item">
 						<div class="product-item-row title">SEABASS</div>
 						<div class="product-item-row">
@@ -637,6 +638,7 @@
 						<div class="product-item-row"><div>SPANISH</div></div>
 					</li>
 				</ul>
+				<button class="js-product-details-toggle close-button" data-overlay-name="farmed-fish"><img src="./icons/cross.svg" data-overlay-name="farmed-fish"></button>
 			</div>
 			
 
@@ -650,7 +652,7 @@
 						<p>Whether you are a wholesaler, restaurant, caterer or individual, we will be happy to help you with your requirements.</p>
 					</div>
 					<div class="footer--slice">
-						<p>Visit us at our Billingsgate market stalls Tuesday–Sauturday, 5–9am (retail customers).</p>
+						<p>Visit us at our Billingsgate market stalls<br>Tuesday–Sauturday, 5–9am (retail customers).</p>
 					</div>
 				</div>
 				<div class="footer--logo--container">
