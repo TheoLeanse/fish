@@ -12,7 +12,7 @@ css:
 
 js:
 	@mkdir -p dist
-	@cp main.js dist/main.js
+	@node_modules/.bin/babel main.js --out-file dist/main.js --presets=es2015,babel-preset-minify
 
 copy-images:
 	@mkdir -p dist
@@ -29,6 +29,7 @@ copy-icons:
 copy-pdf:
 	@mkdir -p dist
 	@cp -a pdf dist
+
 webp:
 	@mkdir -p dist/images
 	~/Downloads/cwebp -preset photo -q 75 images/g-optimized/home-l.jpg -o dist/images/home-l.webp
